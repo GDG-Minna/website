@@ -1,0 +1,22 @@
+{
+  "name": "gdg-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GDG-Minna/website.git"
+  },
+  "author": "gdg minna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GDG-Minna/website/issues"
+  },
+  "homepage": "https://github.com/GDG-Minna/website#readme",
+  "dependencies": {
+    "tailwindcss": "^1.1.3"
+  }
+}
