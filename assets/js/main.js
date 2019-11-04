@@ -55,5 +55,3 @@ const offset = el => {
   });
   console.log(elTopPosition);
 };
-
-// Animate Scroll

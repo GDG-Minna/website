@@ -173,6 +173,7 @@ Procfile    text
 *.swc  binary
 *.swf  binary
 *.webm binary
+*.mvk binary
 
 ## ARCHIVES
 *.7z  binary
