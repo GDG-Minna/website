@@ -4,8 +4,8 @@ Project Files of the Google Developer Group, Minna website as presented by Abdul
 
 Developed by;
 
-Shuaib Mohammed - [Github - @shuaibu78](https://github.com/shuaibu78), [ Twitter - @m_shuaib1](https://twitter.com/m_shuaib1)
-Hakeem Ayodeji - [Github - @ayoazeez26](https://github.com/ayoazeez26), [ Twitter - @ayoazeez26](https://twitter.com/ayoazeez26)
+- Shuaib Mohammed - [Github - @shuaibu78](https://github.com/shuaibu78), [ Twitter - @m_shuaib1](https://twitter.com/m_shuaib1)
+- Hakeem Ayodeji - [Github - @ayoazeez26](https://github.com/ayoazeez26), [ Twitter - @ayoazeez26](https://twitter.com/ayoazeez26)
 
 
 
