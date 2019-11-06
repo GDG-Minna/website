@@ -317,6 +317,9 @@ p {
   .mt-stop {
     margin-top: 0px;
   }
+  header{
+    height: 65px;
+  }
 }
 
 .card {
@@ -349,4 +352,10 @@ p {
     width: 225px;
     height: 233px;
   }
+}
+
+header {
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: #ffffff;
+  z-index: 999;
 }
