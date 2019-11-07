@@ -93,9 +93,9 @@ function showEvents(evts){
           <li>
             <div class="lg:ml-4 uk-card shadow-none lg:my-2">
               <div class="uk-card-body">
-                <div class="details rounded-b">
+                <div class="details catch rounded-b">
                   <h3 class="uk-card-title">${events.name}</h3>
-                  <p class="event-text">${events.description.slice(0, 181)}.</p>
+                  <p class="event-text">${events.description}</p>
                   <div class="flex justify-between">
                     <div class="justify-start">
                       <span class="evt-date">Date</span>
@@ -107,7 +107,7 @@ function showEvents(evts){
                     </div>
                   </div>
                   <div class="mt-2">
-                    <span><a href=${events.link} class="reserve">All seats Booked</a></span>
+                    <span><a href=${events.link} class="reserve">RSVP</a></span>
                   </div>
                 </div>
               </div>
@@ -120,3 +120,21 @@ function showEvents(evts){
 }
 cards.innerHTML = cardTemplate;
 }
+
+
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {srollTop()};
+
+function srollTop() {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
