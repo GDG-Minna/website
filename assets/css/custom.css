@@ -380,3 +380,7 @@ header {
   cursor: pointer;
   scroll-behavior: smooth;
 }
+
+.img-inline img{
+  display: inline;
+}
