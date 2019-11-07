@@ -60,6 +60,7 @@ function prevent(e) {
   e.preventDefault();
 }
 
+// api call
 const cards = document.getElementById('cards')
 
 let events = [];
@@ -70,7 +71,7 @@ try {
     const result = await response.json();
       events = result;
       console.log(events)
-      showEvents(events);
+      showEvents(events)
   }
   consumeApi()
 } catch (error) {
