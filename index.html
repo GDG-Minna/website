@@ -8,12 +8,12 @@
   <meta name="keywords"
     content="GDG, GDG Members, GDG Minna, DSC, google developers group, developers in minna, tech community in Minna, software developers, software developers">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> -->
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.ico">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico" />
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/output.css">
-  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> Remove comment statement to use Tailwind CSS without Node Modules--> 
+  <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> Remove comment statement to use Tailwind CSS without Node Modules-->
   <link rel="stylesheet" href="assets/fonts/stylesheet.css">
   <link rel="stylesheet" href="assets/css/custom.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -22,35 +22,34 @@
   <title>GDG Minna Website</title>
 </head>
 
-<body>
-  <header>
-    <div class="container mx-auto">
-      <nav class="logo_div row flex justify-between mt-6 mx-auto w-11/12">
-        <a href="index.html" class="flex">
-          <img src="assets/img/logo.png" alt="GDG Minna Logo">
-          <h6 class="font-bold ml-2 mt-0 text-xl">GDG Minna</h6>
-        </a>
-        <div class="nav-items hidden lg:inline">
-          <a href="index.html" class="lg:ml-4 xl:ml-6">Home</a>
-          <a href="#second-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="second-section">About</a>
-          <a href="#seventh-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="seventh-section">Event</a>
-          <a href="#" class="lg:ml-4 xl:ml-6">Devfest</a>
-          <a href="#eight-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="eight-section">Team</a>
-          <a href="#tenth-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="tenth-section">Contact</a>
-        </div>
-        <nav class="h-auto flex md:hidden">
-          <span class="menu-btn flex relative flex-col justify-center items-center w-8 h-8 border-4 pri-border">
-            <span class="toggle-spinners bg w-4 h-1 mb-1 pointer-events-none"></span>
-            <span class="toggle-spinners bg w-4 h-1 pointer-events-none"></span>
-          </span>
-        </nav>
+<body class="scroll" data-scroll="myBtn">
+  <header class="fixed w-screen top-0 left-0" <div class="container mx-auto pb-4">
+    <nav class="logo_div row flex justify-between mt-6 mx-auto w-11/12">
+      <a href="index.html" class="flex">
+        <img src="assets/img/logo.png" alt="GDG Minna Logo">
+        <h6 class="font-bold ml-2 mt-0 text-xl">GDG Minna</h6>
+      </a>
+      <div class="nav-items hidden lg:inline">
+        <a href="index.html" class="lg:ml-4 xl:ml-6">Home</a>
+        <a href="#second-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="second-section">About</a>
+        <a href="#seventh-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="seventh-section">Event</a>
+        <a href="#" class="lg:ml-4 xl:ml-6">Devfest</a>
+        <a href="#eight-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="eight-section">Team</a>
+        <a href="#tenth-section" class="lg:ml-4 xl:ml-6 scroll-to" data-scroll="tenth-section">Contact</a>
+      </div>
+      <nav class="h-auto flex md:hidden">
+        <span class="menu-btn flex relative flex-col justify-center items-center w-8 h-8 border-4 pri-border">
+          <span class="toggle-spinners bg w-4 h-1 mb-1 pointer-events-none"></span>
+          <span class="toggle-spinners bg w-4 h-1 pointer-events-none"></span>
+        </span>
       </nav>
+    </nav>
     </div>
 
     <!-- small screen nav-->
     <nav
-      class="sm-nav opacity-0 hidden fixed top-0 left-0 z-50 w-screen h-screen flex items-center justify-center bg-gray-800 md:hidden">
-      <div class="flex flex-col">
+      class="sm-nav opacity-0 hidden fixed top-0 left-0 z-50 w-screen h-screen flex items-center pb-4 justify-center bg-gray-800 md:hidden">
+      <div class="flex flex-col pb-4">
         <a class="sm-scroll mb-3 px-4 py-2 text-gray-200 cursor-pointer" href="index.html" data-scroll="">Home</a>
         <a class="mb-3 px-4 py-2 text-gray-200 cursor-pointer scroll-to" data-scroll="second-section" href="">About</a>
         <a class="mb-3 px-4 py-2 text-gray-200 cursor-pointer scroll-to" data-scroll="seventh-section" href="">Event</a>
@@ -70,22 +69,23 @@
 
   <!-- First section -->
   <section id="first-section">
-    <div class="container mx-auto pt-16 mt-0 lg:mt-12" data-aos="fade-up" data-aos-offset="200">
+    <div class="container mx-auto lg:pt-16 pt-24 lg:mt-12">
       <div class="row items-center mx-auto w-11/12 lg:flex lg:justify-between">
         <div class="hero-icon flex justify-center items-center hidden lg:inline lg:w-5/12 h-auto">
           <img class="mx-auto my-auto" src="assets/img/hero icon.png" alt="GDG Icon">
         </div>
         <div class="hero-aside lg:w-6/12">
-          <h4 class="text-sm md:text-base">GDG MINNA</h4>
+          <h4 class="text-sm md:text-base">GDG Minna</h4>
           <h1 class="capitalize font-bold leading-normal text-3xl md:text-4xl">Build awesome<br>products <span
               class="highlight">together.</span></h1>
-          <p class="leading-relaxed mt-4 mb-6 text-sm md:text-base md:w-11/12">Google Developers Group Minna a Community
+          <p class="leading-relaxed mt-4 mb-6 text-sm md:text-base md:w-11/12">Google Developers Group Minna is a
+            Community
             where Developers and IT Enthusiast meet to solve real life problems using various Google products. We learn,
             share and also inspire aspiring developers</p>
           <div class="flex flex-col w-4/6 md:flex-row md:justify-between md:w-2/5 lg:w-3/5">
-            <a href="https://www.meetup.com/GDGMinna" target="_blank"
+            <a href="https://www.meetup.com/GDGMinna" rel=”noreferrer” target="_blank"
               class="highlight-btn px-6 py-3 rounded shadow-xl text-white text-center">Become a Member</a>
-            <a href="https://developers.google.com/community/gdg" target="_blank"
+            <a href="https://developers.google.com/community/gdg" rel=”noreferrer” target="_blank"
               class="highlight mt-6 underline md:mt-3">Learn More</a>
           </div>
         </div>
@@ -93,14 +93,17 @@
     </div>
   </section>
   <!-- /First Section -->
-
+  <!-- <button  id="myBtn" title="Go to top">Top</button>  -->
+  <span id="myBtn" onclick="scrollToTop()">
+    <img src="./assets/img/arrow-up.svg" class="lg:h-6 h-4 lg:w-6 w-4" alt="arrow head">
+  </span>
   <!-- Second Section -->
   <section id="second-section">
     <div class="container mx-auto pt-16" data-aos="fade-up">
       <div class="row flex flex-col mx-auto w-11/12 lg:flex-row-reverse lg:justify-between lg:pt-20 lg:w-10/12">
         <h2 class="capitalize font-bold leading-snug mb-8 text-2xl md:text-3xl lg:hidden ">Why become a member?</h2>
         <div class="member-photo w-full lg:w-6/12">
-          <img class="" src="assets/img/GDGMembers.jpg" alt="Member Photo">
+          <img class="" src="assets/img/GDGMinnainfo.jpg" alt="Member Photo">
         </div>
         <div class="member-aside self-center lg:w-5/12">
           <h2 class="capitalize font-bold hidden leading-snug text-2xl md:text-3xl lg:block ">Why become a<br>member?
@@ -108,7 +111,8 @@
           <p class="leading-relaxed mt-4 mb-4 text-sm md:text-base md:w-5/6 lg:w-11/12">When you join GDG Minna, you’ll
             have the opportunity to meet new and local developers with similar interest in technology, learn new skills
             through hands-on workshops attend talks on a wide range of technical topics for free.</p>
-          <a href="https://www.meetup.com/GDGMinna" target="_blank" class="highlight mt-6 underline md:mt-3">Become a
+          <a href="https://www.meetup.com/GDGMinna" rel=”noreferrer” target="_blank"
+            class="highlight mt-6 underline md:mt-3">Become a
             Member</a>
         </div>
       </div>
@@ -160,7 +164,7 @@
         <h2 class="capitalize font-bold leading-snug mb-8 text-2xl md:text-3xl lg:hidden ">Google has Partnered<br>with
           Women Techmakers</h2>
         <div class="member-photo w-full lg:w-5/12">
-          <img class="" src="assets/img/WTM.jpg" alt="Member Photo">
+          <img class="" src="assets/img/WTM.jpg" alt="women tech makers Photo">
         </div>
         <div class="hero-aside lg:w-6/12">
           <h6 class="awesome font-medium hidden lg:block">Awesome news for women in tech</h6>
@@ -169,7 +173,8 @@
           <p class="leading-relaxed mt-4 mb-4 text-sm md:text-base md:w-4/6 lg:w-full">Get connect with vibrant and
             talented African women in tech community, with top tech companies, enhance your skills portfolio,
             celebrating diversity in all forms within the technology industry. It’s time to stand up and be counted.</p>
-          <a href="https://www.womentechmakers.com" target="_blank" class="mt-6 underline md:mt-3">Know More</a>
+          <a href="https://www.womentechmakers.com" rel=”noreferrer” target="_blank" class="mt-6 underline md:mt-3">Know
+            More</a>
         </div>
       </div>
     </div>
@@ -180,8 +185,9 @@
   <section id="fifth-section">
     <div class="container mx-auto pt-16" data-aos="fade-up">
       <div class="row flex flex-col mx-auto w-11/12 lg:flex-row lg:justify-between lg:pt-20 lg:w-10/12">
-        <iframe class="gdg_video mx-auto" src="https://www.youtube.com/embed/KlWVfEiW7Ak" frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="gdg_video mx-auto" title="gdg video" src="https://www.youtube.com/embed/KlWVfEiW7Ak"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
     </div>
   </section>
@@ -231,73 +237,10 @@
       <div class="row flex flex-col mx-auto w-11/12 lg:justify-between">
         <div class="lg:mb-12 lg:mt-16 mt-16">
           <h2 class="lg:text-2xl lg:font-bold font-bold">Events</h2>
-          <p class="event-text lg:w-4/12">Google Developer Groups (GDGs) are for developers
-            who are interested in different Google's
-            development technologies.</p>
+          <p class="event-text lg:w-4/12">Google Developer Groups (GDGs) are for individuals
+            interested in Google's development technologies.</p>
         </div>
-        <div class="row w-11/12">
-          <div class="uk-position-relative uk-visible-toggle uk-light lg:mb-12" tabindex="-1" uk-slider>
-
-            <div class="uk-position-relative uk-visible-toggle uk-light lg:mb-10" tabindex="-1">
-
-              <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
-                <li>
-                  <div class="lg:ml-4 uk-card shadow-none lg:my-2">
-                    <div class="uk-card-body">
-                      <div class="details rounded-b">
-                        <h3 class="uk-card-title">Kotlin Saturday</h3>
-                        <p class="event-text">Get Introduced into the interesting world
-                          of building mobile apps ith Kotlin</p>
-                        <div class="flex justify-between">
-                          <div class="justify-start">
-                            <span class="evt-date">Date</span>
-                            <p class="font-bold timestamp">24th Sept, 2019</p>
-                          </div>
-                          <div class="justify-end">
-                            <span class="evt-date">Time</span>
-                            <p class="font-bold timestamp">2pm</p>
-                          </div>
-                        </div>
-                        <div class="mt-2">
-                          <span><a href="#" class="reserve">All seats Booked</a></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="uk-card shadow-none lg:my-2">
-                    <div class="uk-card-body">
-                      <div class="details rounded-b">
-                        <h3 class="uk-card-title">Devfest 2019</h3>
-                        <p class="event-text">It’s another season of devfest again.
-                          This year’s event promises to be Lite!</p>
-                        <div class="flex justify-between">
-                          <div class="justify-start">
-                            <span class="evt-date">Date</span>
-                            <p class="font-bold timestamp">26th Oct, 2019</p>
-                          </div>
-                          <div class="justify-end">
-                            <span class="evt-date">Time</span>
-                            <p class="font-bold timestamp">11am</p>
-                          </div>
-                        </div>
-                        <div class="mt-2">
-                          <span><a href="#" class="reserve"> Reserve a seat here</a></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <a class="uk-position-center-left uk-position-small uk-hidden-hover uk-bg" href="#" uk-slidenav-previous
-                uk-slider-item="previous"></a>
-              <a class="uk-position-center-right uk-position-small uk-hidden-hover uk-bg" href="#" uk-slidenav-next
-                uk-slider-item="next"></a>
-            </div>
-            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-dark"></ul>
-          </div>
-        </div>
+        <div id="cards" class="row w-11/12"></div>
       </div>
     </div>
   </section>
@@ -317,7 +260,7 @@
                 <li>
                   <div class="uk-card card shadow-none">
                     <div class="uk-card-media-top m-auto w-11/12 flex justify-center items-center">
-                      <img src="assets/img/memunat.jpg" class="pt-2 reorder-pic">
+                      <img src="assets/img/memunat.jpg" class="pt-2 reorder-pic" alt="women techmaker lead">
                     </div>
                     <div class="details rounded-b pb-8 m-auto w-11/12 mt-4">
                       <h3 class="uk-card-title lg:ml-4 ml-10">Memunat Manzuma</h3>
@@ -328,10 +271,10 @@
                 <li>
                   <div class="uk-card card card-shadow shadow-none ">
                     <div class="uk-card-media-top m-auto w-11/12 flex justify-center items-center">
-                      <img src="assets/img/umar.jpg" class="pt-2 reorder-pic">
+                      <img src="assets/img/umar.jpg" class="pt-2 reorder-pic" alt="gdg minna organizer">
                     </div>
                     <div class="details rounded-b pb-8 m-auto w-11/12 mt-4">
-                      <h3 class="uk-card-title lg:ml-4 ml-10">Umar Auna</h3>
+                      <h3 class="uk-card-title lg:ml-4 ml-10">Umar Saidu Auna</h3>
                       <p class="evt-date lg:ml-4 ml-10">GDG Minna Organizer</p>
                     </div>
                   </div>
@@ -339,11 +282,11 @@
                 <li>
                   <div class="uk-card card shadow-none">
                     <div class="uk-card-media-top m-auto w-11/12 flex justify-center items-center">
-                      <img src="assets/img/isaac.jpg" class="pt-2 reorder-pic">
+                      <img src="assets/img/isaac.jpg" class="pt-2 reorder-pic" alt="gdg minna community manager">
                     </div>
                     <div class="details rounded-b pb-8 m-auto w-11/12 mt-4">
                       <h3 class="uk-card-title lg:ml-4 ml-10">Isaac Marcus</h3>
-                      <p class="evt-date lg:ml-4 ml-10">GDG Minna co-organizer</p>
+                      <p class="evt-date lg:ml-4 ml-10">GDG Minna Co-Organizer</p>
                     </div>
                   </div>
                 </li>
@@ -368,11 +311,12 @@
         <h3 class="team">General Partners</h3>
         <div class="flex justify-between lg:flex lg:justify-start">
           <div class="women-tech">
-            <img src="assets/img/women.png" alt="">
+            <img src="assets/img/women.png" width="150px" alt="WTM-logo">
           </div>
         </div>
         <p class="partner-text lg:w-8/12">A very big thank you to our partners for your continued partnership.<br />
-          If you’re interested in showcasing your products and services at <span class="font-bold">GDGMINNA</span> events, contact us at
+          If you’re interested in supporting us or showcasing your products and services at <span class="font-bold">GDG
+            Minna</span> events, contact us at
           <a href="mailto:info@gdgminna.com">gdgminna@gmail.com</a> to discuss partnership opportunities.</p>
       </div>
     </div>
@@ -381,42 +325,43 @@
 
   <!-- tenth-section -->
   <section id="tenth-section">
-    <div class="container mx-auto lg:mt-12 mt-2">
-      <div class="row flex w-11/12 lg:flex-row flex-col lg:justify-between lg:pt-8 mx-auto pb-2">
+    <div class="container mx-auto lg:mt-12 mt-2 pb-12">
+      <div class="row flex w-11/12 lg:flex-row flex-col lg:justify-between lg:pt-8 mx-auto pb-6">
         <div class="flex flex-col">
-          <h4>contact us</h4>
-          <p>No 28 Zone C Farm Centre Tunga Minna, Niger State</p>
+          <h4>Contact us</h4>
+          <!--<p>No 28, Zone C Farm Centre Tunga Minna, Niger State</p>-->
           <p>Phone: +2348183969048</p>
           <p>Phone: +2347031162515</p>
           <p>Email: gdgminna@gmail.com</p>
         </div>
         <div class="flex flex-col">
           <h4>Follow us</h4>
-          <div class="">
+          <div class="img-inline">
             <span>
-              <a href="https://facebook.com/GDGMinna" target="_blank">
-                <svg class="fill-current text-blue inline-block h-12 w-12 " xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512">
-                  <path
-                    d="M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z" />
-                </svg>
+              <a href="https://facebook.com/GDGMinna" class="inline" rel=”noreferrer” target="_blank">
+                <img src="./assets/img/facebook-logo.png" class="lg:h-12 h-8 lg:w-12 w-8" alt="facebook logo">
               </a>
             </span>
             <span>
-              <a href="https://medium.com/@gdgminna" target="_blank">
-                <svg class="fill-current text-black inline-block h-12 w-12 lg:ml-4" xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512">
-                  <path
-                    d="M99 414.3c1.1 5.7-2.3 11.1-8 12.3-5.4 1.1-10.9-2.3-12-8-1.1-5.4 2.3-11.1 7.7-12.3 5.4-1.2 11.1 2.3 12.3 8zm143.1 71.4c-6.3 4.6-8 13.4-3.7 20 4.6 6.6 13.4 8.3 20 3.7 6.3-4.6 8-13.4 3.4-20-4.2-6.5-13.1-8.3-19.7-3.7zm-86-462.3c6.3-1.4 10.3-7.7 8.9-14-1.1-6.6-7.4-10.6-13.7-9.1-6.3 1.4-10.3 7.7-9.1 14 1.4 6.6 7.6 10.6 13.9 9.1zM34.4 226.3c-10-6.9-23.7-4.3-30.6 6-6.9 10-4.3 24 5.7 30.9 10 7.1 23.7 4.6 30.6-5.7 6.9-10.4 4.3-24.1-5.7-31.2zm272-170.9c10.6-6.3 13.7-20 7.7-30.3-6.3-10.6-19.7-14-30-7.7s-13.7 20-7.4 30.6c6 10.3 19.4 13.7 29.7 7.4zm-191.1 58c7.7-5.4 9.4-16 4.3-23.7s-15.7-9.4-23.1-4.3c-7.7 5.4-9.4 16-4.3 23.7 5.1 7.8 15.6 9.5 23.1 4.3zm372.3 156c-7.4 1.7-12.3 9.1-10.6 16.9 1.4 7.4 8.9 12.3 16.3 10.6 7.4-1.4 12.3-8.9 10.6-16.6-1.5-7.4-8.9-12.3-16.3-10.9zm39.7-56.8c-1.1-5.7-6.6-9.1-12-8-5.7 1.1-9.1 6.9-8 12.6 1.1 5.4 6.6 9.1 12.3 8 5.4-1.5 9.1-6.9 7.7-12.6zM447 138.9c-8.6 6-10.6 17.7-4.9 26.3 5.7 8.6 17.4 10.6 26 4.9 8.3-6 10.3-17.7 4.6-26.3-5.7-8.7-17.4-10.9-25.7-4.9zm-6.3 139.4c26.3 43.1 15.1 100-26.3 129.1-17.4 12.3-37.1 17.7-56.9 17.1-12 47.1-69.4 64.6-105.1 32.6-1.1.9-2.6 1.7-3.7 2.9-39.1 27.1-92.3 17.4-119.4-22.3-9.7-14.3-14.6-30.6-15.1-46.9-65.4-10.9-90-94-41.1-139.7-28.3-46.9.6-107.4 53.4-114.9C151.6 70 234.1 38.6 290.1 82c67.4-22.3 136.3 29.4 130.9 101.1 41.1 12.6 52.8 66.9 19.7 95.2zm-70 74.3c-3.1-20.6-40.9-4.6-43.1-27.1-3.1-32 43.7-101.1 40-128-3.4-24-19.4-29.1-33.4-29.4-13.4-.3-16.9 2-21.4 4.6-2.9 1.7-6.6 4.9-11.7-.3-6.3-6-11.1-11.7-19.4-12.9-12.3-2-17.7 2-26.6 9.7-3.4 2.9-12 12.9-20 9.1-3.4-1.7-15.4-7.7-24-11.4-16.3-7.1-40 4.6-48.6 20-12.9 22.9-38 113.1-41.7 125.1-8.6 26.6 10.9 48.6 36.9 47.1 11.1-.6 18.3-4.6 25.4-17.4 4-7.4 41.7-107.7 44.6-112.6 2-3.4 8.9-8 14.6-5.1 5.7 3.1 6.9 9.4 6 15.1-1.1 9.7-28 70.9-28.9 77.7-3.4 22.9 26.9 26.6 38.6 4 3.7-7.1 45.7-92.6 49.4-98.3 4.3-6.3 7.4-8.3 11.7-8 3.1 0 8.3.9 7.1 10.9-1.4 9.4-35.1 72.3-38.9 87.7-4.6 20.6 6.6 41.4 24.9 50.6 11.4 5.7 62.5 15.7 58.5-11.1zm5.7 92.3c-10.3 7.4-12.9 22-5.7 32.6 7.1 10.6 21.4 13.1 32 6 10.6-7.4 13.1-22 6-32.6-7.4-10.6-21.7-13.5-32.3-6z" />
-                </svg>
+              <a href="https://medium.com/@gdgminna" rel=”noreferrer” class="inline" target="_blank">
+                <img src="./assets/img/medium-logo.png" class="lg:h-12 h-8 lg:w-12 w-8 lg:ml-4" alt="medium logo">
               </a>
             </span>
             <span>
-              <a href="https://twitter.com/gdgminna" target="_blank">
-                <svg class="fill-current text-teal-500 inline-block h-12 w-12 lg:ml-4"
+              <a href="https://twitter.com/gdgminna" rel=”noreferrer” target="_blank">
+                <svg class="fill-current text-teal-500 inline-block lg:h-12 h-8 lg:w-12 w-8 lg:ml-4"
                   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                   <path
                     d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                </svg>
+              </a>
+            </span>
+            <span>
+              <a href="https://github.com/GDG-Minna" rel=”noreferrer” target="_blank">
+                <svg class="inline-block lg:h-12 h-8 lg:w-12 w-8 lg:ml-4" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 496 512">
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                 </svg>
               </a>
             </span>
@@ -424,16 +369,17 @@
         </div>
       </div>
       <div
-        class="row flex lg:flex-row  w-11/12 lg:justify-between justify-between mx-auto pt-2 border-t border-t-solid border-gray-500">
+        class="row flex lg:flex-row w-11/12 lg:justify-between justify-between mx-auto pt-4 border-t border-t-solid border-gray-500">
         <div>
-          <h5>GDGMINNA</h5>
+          <h5>&copy; GDGMinna 2019</h5>
         </div>
         <div>
-          <h5>Terms and policy</h5>
+          <a href="https://developers.google.com/community/guidelines" target="_blank">Code of Conduct</a>
+          <!-- <h5></h5> -->
         </div>
-        <div>
-          <h5>GDGMINNA 2019</h5>
-        </div>
+        <!-- <div>
+          <h5>GDGMINNA 20</h5>
+        </div> -->
       </div>
     </div>
   </section>
@@ -447,7 +393,6 @@
       offset: 400,
       duration: 800
     });
-
   </script>
 </body>
 

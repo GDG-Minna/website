@@ -259,8 +259,8 @@ p {
 
 .uk-card-title {
   color: black !important;
-  font-size: 18px !important;
-  font-weight: bold;
+  font-size: 24px !important;
+  font-weight: bolder !important;
   margin-bottom: 0;
   line-height: 22px !important;
 }
@@ -286,7 +286,7 @@ p {
 }
 
 .partner-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 28px;
   color: #656363;
   margin-left: 15px;
@@ -299,7 +299,7 @@ p {
   }
 
   .partner-text {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 36px;
     color: #656363;
   }
@@ -310,12 +310,14 @@ p {
 
   .event-text {
     font-size: 16px;
-    line-height: 26px;
     color: #656363;
   }
 
   .mt-stop {
     margin-top: 0px;
+  }
+  header{
+    height: 65px;
   }
 }
 
@@ -324,7 +326,7 @@ p {
 }
 
 #tenth-section {
-  background: #F8FAFD;
+  background: #Fff;
 }
 
 #tenth-section p {
@@ -333,7 +335,8 @@ p {
 
 #tenth-section h4 {
   font-size: 34px !important;
-  color: #EA4335;
+  color: black;
+  font-weight: bolder;
 }
 
 @media (max-width: 450px) {
@@ -349,4 +352,35 @@ p {
     width: 225px;
     height: 233px;
   }
+}
+
+header {
+  transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background: #ffffff;
+  z-index: 999;
+}
+
+.catch p:nth-child(3) {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.catch p:nth-child(4) {
+  display: none;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+  scroll-behavior: smooth;
+}
+
+.img-inline img{
+  display: inline;
 }

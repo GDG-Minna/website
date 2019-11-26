@@ -55,3 +55,86 @@ const offset = el => {
   });
   console.log(elTopPosition);
 };
+
+function prevent(e) {
+  e.preventDefault();
+}
+
+// api call
+const cards = document.getElementById('cards')
+
+let events = [];
+
+try {
+  const consumeApi = async function apiRequest() {
+    const response = await fetch('https://cors-anywhere.herokuapp.com/https://api.meetup.com/gdgminna/events?sign=true&photo-host=public&page=50&access_token=3b3eab9e6952edaaa8dfded8350e3f0c');
+    const result = await response.json();
+      events = result;
+      console.log(events)
+      showEvents(events)
+  }
+  consumeApi()
+} catch (error) {
+  console.log('error')
+}
+
+function showEvents(evts){
+  let cardTemplate = '';
+  if(evts.length < 1){
+    cardTemplate  = `<h1 class="lg:flex lg:items-center lg:justify-center">There are no event for this page</h1>`
+  }else{
+  evts.forEach(events => {
+    cardTemplate +=`
+    <div class="uk-position-relative uk-visible-toggle uk-light lg:mb-12" tabindex="-1" uk-slider>
+
+      <div class="uk-position-relative uk-visible-toggle uk-light lg:mb-10" tabindex="-1">
+
+        <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
+          <li>
+            <div class="lg:ml-4 uk-card shadow-none lg:my-2">
+              <div class="uk-card-body">
+                <div class="details catch rounded-b">
+                  <h3 class="uk-card-title">${events.name}</h3>
+                  <p class="event-text">${events.description}</p>
+                  <div class="flex justify-between">
+                    <div class="justify-start">
+                      <span class="evt-date">Date</span>
+                      <p class="font-bold timestamp">${events.local_date}</p>
+                    </div>
+                    <div class="justify-end">
+                      <span class="evt-date">Time</span>
+                      <p class="font-bold timestamp">${events.local_time}</p>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <span><a href=${events.link} class="reserve">RSVP</a></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>`;
+  })
+}
+cards.innerHTML = cardTemplate;
+}
+
+
+mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {srollTop()};
+
+function srollTop() {
+  if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
