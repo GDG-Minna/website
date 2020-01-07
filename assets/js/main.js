@@ -81,7 +81,7 @@ try {
 function showEvents(evts){
   let cardTemplate = '';
   if(evts.length < 1){
-    cardTemplate  = `<h1 class="lg:flex lg:items-center lg:justify-center">There are no event for this page</h1>`
+    cardTemplate  = `<h1 class="lg:flex lg:items-center lg:justify-center">There are no events coming up</h1>`
   }else{
   evts.forEach(events => {
     cardTemplate +=`
